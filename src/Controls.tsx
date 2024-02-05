@@ -43,7 +43,7 @@ useFrame(()=>{
         playerRef.current.setAdditionalMass(0.5)
         playerRef.current.lockRotations(true, true); //Locks rotation because of capsule body
         const position = playerRef.current.translation();
-        // Setting camera position and creating walking/breathing affect
+        // Setting camera position and breathing affect
         camera.position.x = position.x;
         camera.position.z = position.z;
         if (right || left || forward || backward) {
